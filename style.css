@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+	body {
+	background: linear-gradient(#b983c9, #e6c5f0);
+	}
+
+	.mainmenu {
+		position: sticky;
+		top: 0; 
+		background-color: #FF9A47;
+		z-index: 999; 
+		margin: -10px -10px -10px;
+		padding: 0;
+		overflow: auto;
+	}
+	
+	.mainmenu::after {
+    content: "";
+    display: block;
+    clear: both;
+	}
+	
+	a {
+	text-decoration: none;
+	}	
+	
+	.menutext {
+		color: #9C57B0;
+		font-family: Convergence;
+		font-weight: bold;
+		float: left;
+		transition: text-shadow 0.1s ease-in-out, color 0.1s ease-in-out;
+	}
+	
+	.menutext:hover {
+		color: #F4E3F9;
+		text-shadow: 0 0 5px #9C57B0;  
+	}
+	
+	.musicfooter{
+		background-color: #9C57B0;
+		color: #9C57B0;
+		margin: -10px -10px 0px;
+		padding: 5px;
+		position: fixed;
+		bottom: 0;
+		z-index: 999;
+		width: 100%;
+	}
+	
+	.footertext{	
+		color: white;
+		font-family: Convergence;
+		font-size: 10px;
+		float: left;
+		margin-left: 5px;
+	}
+
+
+	.musicplayer{
+		color: white;
+		display: flex;
+		justify-content: center;  
+		align-items: center;		
+		gap: 25px;
+		padding: 0px;
+		bottom: 0;
+	}
+	
+	.searchbar {
+	background-color: #EBAF7E; 
+	margin-left: 20px; 
+	border-radius: 5px;
+	padding: 0;
+	height: 2.5rem;
+	width: 30rem;
+	}
+	
+    .swiper {
+      width: 95%;
+      height: 300px;
+    }
+
+    .swiper-slide {
+		height: 250px;
+		padding: 10px; 
+		box-sizing: border-box;
+    }
+
+    .swiper-slide img {
+      display: block;
+      border-radius: 10px;
+	  height: 100%;
+    }	
+	
+	.musicicon {
+		background-color: #cd9cda;
+		border: 1px solid black;
+		width: 150px;
+		height: 200px;
+		margin: 0 auto;
+		padding: 5px;
+		border-radius: 5px;
+		transition: box-shadow 0.5s ease-in-out, margin 0.5s ease-in-out; 
+	}
+
+	.musicicon:hover {
+		margin-top: 9px;
+		box-shadow: 0 0 30px white;
+	}
+
+	.musictext {
+		color: rgb(255, 255, 255);
+		font-family: Convergence;
+		text-align: left;
+	}
+
+	.musictext2 {
+		color: rgb(107, 107, 107);
+		font-family: Convergence;
+		text-align: left;
+		font-size: 10pt;
+	}	
+
+	.musictext3 {
+		color: rgb(255, 255, 255);
+		font-family: Convergence;
+		text-align: left;
+	}	
+	
+	.musictext4 {
+		color: rgb(255, 255, 255);
+		font-family: Convergence;
+		font-weight: 700;
+		font-size: 10pt;
+	}
+
+	.musictext:hover{
+		color: gray;	
+		cursor: pointer;
+	}
+	
+	.musictext2:hover{
+		color: rgb(70, 70, 70);
+		cursor: pointer;
+	}	
+
+	.musictext4:hover{
+		color: gray;
+		cursor: pointer;
+	}	
+
+	.NewTracks {	
+		width: 97%;
+		height: 150px;
+		margin: 0 auto;
+		padding: 5px;
+		float: left;
+	}
+
+	.NewTR {
+		border: 2px solid #5d3e66;
+		width: 65px;
+		height: 65px; 
+		border-radius: 50%; 
+		display: block; 
+		margin: 0 auto;
+		transition: box-shadow 0.1s ease-in-out;
+	}
+
+	.NewTR:hover {
+		box-shadow: 0 0 20px #e6c5f0;
+		animation: spin 10s linear infinite;
+	}
+
+	@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+		}
+
+	.ArtistRec {
+		border: 1px solid black;
+		width: 97%;
+		height: 400px;
+		margin-top: 40px;
+		padding: 5px;
+		float: left;
+	}	
+
+	.Rec {
+		margin-top: 15px;
+		width: 97%;
+		height: 65px;
+		padding: 5px;
+		border-radius: 5px;
+    	color: white;
+    	font-family: convergence;
+    	cursor: pointer;		
+
+		display: flex;       
+		align-items: center;     
+    	justify-content: space-between; 
+	}
+
+	.Recimg {
+		border: 2px solid #5d3e66;
+		width: 65px;
+		height: 65px; 
+		border-radius: 50%; 
+		float: left;
+	}
+
+	.followbtn {
+    	height: 30px;
+    	padding: 0 15px;   
+    	border-radius: 20px; 
+    	background-color: #FF9A47;
+    	color: white;
+    	font-family: convergence;
+    	cursor: pointer;
+
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+
+    	white-space: nowrap; 
+    	transition: all 0.2s ease; 
+	}
+
+	.followbtn.following {
+    	background-color: #965d2f;
+    	color: rgb(66, 66, 66);
+    	border: none;
+	}
+	
+	.followbtn:hover{
+		color : rgb(131, 131, 131);
+
+	}
+
+	.soundbox {
+    display: flex;
+    justify-content: center;
+	}			
+	
+	#sound {
+	-webkit-appearance: none;
+	appearance: none;
+	background:  #FF9A47;
+	border-radius: 30px;
+	cursor: pointer;		
+	height: 5px;
+	width: 700px;
+	cursor: pointer;
+	}		
+		
+	#sound::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border: 2px solid white;
+	background:  #FF9A47;
+	border-radius: 50%;
+	box-shadow: 0px 4px 4px #7C5739;
+	}	
+		
+	.progress {
+	-webkit-appearance: none;
+	appearance: none;
+	writing-mode: vertical-lr;
+	direction: rtl;
+	background:  #FF9A47;
+	width: 6px;
+	height: 100px;
+	border-radius: 4px;
+	cursor: pointer;	
+}
+
+	.progress::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid white;
+	background:  #FF9A47;
+	border-radius: 50%;
+	box-shadow: 0px 4px 4px #7C5739;
+}
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px
+}
+
+.buttons2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px
+}
+.icon-container {	
+    position: relative; 
+    display: inline-block; 
+    cursor: pointer;	
+ }
+
+.hover-box {
+    display: none; 
+    position: absolute; 
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap; 
+}
+
+.icon-container:hover .hover-box {
+    display: block;
+}
+
+
+.buttons2 i {
+    color: white;
+	cursor: pointer;
+}
+
+.buttons2 i:hover {
+    color: gray;
+}
+
+.buttons i {
+    color: white;
+	cursor: pointer;
+}
+
+.buttons i:hover {
+    color: gray;
+}
+
+.likes {
+	font-family: Verdana;	
+	font-weight: 700;
+	font-size: 20pt;
+	color: white;
+}
